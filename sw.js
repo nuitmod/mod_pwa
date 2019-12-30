@@ -46,4 +46,3 @@ async function networkAndCache(req) {
     return cached;
   }
 }
-//test
