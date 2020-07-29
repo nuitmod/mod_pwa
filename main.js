@@ -10,5 +10,7 @@ $(function(){
   $('.mobile2').on('click', function(){
     $('.mobile2').fadeToggle(200);
   });
-
+  $('.bar_1').on('click', function(){
+  $('.mobile2').fadeToggle(200);
+  })
 })
