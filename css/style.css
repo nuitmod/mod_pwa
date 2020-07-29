@@ -3,17 +3,19 @@
   padding: 0;
 }
 body{
-  background: ghostwhite; //#0f0f0f;
+  background: #f8f8ff; //#0f0f0f;
   opasity: 0.39;
+  font-size: 9px;
 }
+/*
 #burg a{
   display: block;
   width: 70px;
 }
 #burg{
-  width: 98%;
+  width: 100%;
   background: #000;
-  padding: 7.5px 0 7.5px 2%;
+  padding: 7.5px 0 7.5px 0;
 }
 span{
   display: flex;
@@ -23,7 +25,7 @@ span{
   background: #c3c3c3;
   z-index: 999;
 }
-
+*/
 .mobile-tab{
   display: flex;
   width: 100%;
@@ -43,26 +45,22 @@ span{
   margin: 2% 3%;
 }
 .mobile-tab ul{
+  display: block;
   padding: 5% 0;
 }
 /*
 @media screen and (min-width: 0){
-*/
-  .mobile-tab,#burg,#mobile{
+
+  #burg,#mobile{
     display: none;
   }
+  */
   .bar{
     background: #000;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-  }
-  .mobile-bar{
-    display: none;
-  }
-  #desktop{
-    display: flex;
   }
   a{
     text-decoration: none;
@@ -78,11 +76,10 @@ span{
   li{
     color: white;
     cursor: pointer;
-    font-weight: lighter;
     background: #000;
     padding: 1px 1px;
     text-align: center;
-    width: 50px;
+    width: 28px;
     transition: all .2s ease-in-out;
   }
   li:hover{
@@ -94,6 +91,30 @@ span{
     color: #2b2b2b;
   }
 
+img{
+  opacity: 1;
+}
+audio{
+  height: 10px;
+  width: 250px;
+  color: black;
+  background: black;
+  background-color: black;
+  z-index: 12;
+}
+input,h6{
+  color: #684e5b;
+  background-color: black;
+}
+button{
+  color: #0f0f0f;
+  height: 2px;
+  background-color: black;
+}
+#audio{
+  position: absolute;
+  bottom: 0;
+}
   /*menu2*/
 /*
   #burg_1{
@@ -145,6 +166,7 @@ span{
     letter-spacing: 1px;
   }
   .mobile_items2 li{
+    display: block;
     list-style-type: none;
     margin-top: 8%;
     color: white;
@@ -153,6 +175,7 @@ span{
     transition: all .2s ease-in-out;
   }
   .mobile_items2 ul{
+    display: block;
     margin-top: 20px;
     padding: 0 0;
   }
