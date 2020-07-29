@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
-  <title>main page</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>mod_pwa</title>
 </head>
 <body>
   <section>
@@ -41,29 +43,38 @@
       </nav>
     </div>
   </section>
+<!--  <section>
+<div id="burg_1">
+    <span class="bar_1" id=""></span>
+  </div>
+  <div class="mob2">
+  <nav class="mobile2">
+    <ul class="mobile_items2">
+        <li><a href="/">main</a></li>
+        <li><a href="/rii">rii</a></li>
+        <li><a href="/mode">mode</a></li>
+        <li><a href="https://nuitmod.github.io/pre_iproj">pre_iproj</a></li>
+        <li><a href="https://nuitmod.github.io/uwsgi_kali/i_uwsgi">i_uwsgi</a></li>
+        <li><a href="https://nuitmod.github.io/nata_pwa_">nata</a></li>
+        <li><a href="https://yoox.com">yoox.com</a></li>
+        <li>
+          <a href="#home"><img id="b_main" src="./icons/visibility-24px.svg"></a>
+          <a href="#rend"><img id="b_radio" src="./icons/visibility_off-24px.svg"></a>
+        </li>
+    </ul>
+  </nav>
+</div>
+</section>-->
 
   <h5>main page</h5>
   <div class="">
     <h5>mod pwa</h5>
   </div>
+  <img src="./img/mode.jpg" alt="" height="152" width="72">
 
-  <img src="./img/mode.jpg" alt="" height="229" width="129">
+  <div id="lit"></div>
 
-  <div class="tech-info">
-    <div id="i1">no jquery</div>
-    <div id="u1">no jq function</div>
-    <input id='bt' type="button" name="click" value="click for hide">
-    <div id="dat">area for input</div>
-  </div>
-<!--  <style media="screen">
-  body{
-
-    }
-  </style>
-    <script src=./main.js></script> -->
-  <script>
-    $('#i1').html("jquery include")
-    $('.tech_info').hide();
-  </script>
+  <script src='./main.js'></script>
+  <script type="module" src='./app.js'></script>
 </body>
 </html>

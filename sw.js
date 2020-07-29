@@ -1,11 +1,10 @@
-const cacheName = 'news-v1';
+const cacheName = 'mod_pwa-v1';
 const staticAssets = [
   './',
   './index.html',
   './styles.css',
-  './index.js',
-  './newsApi.js',
-  './news-article.js'
+  './main.js',
+  './img/mode.jpg'
 ];
 
 self.addEventListener('install', async e => {
