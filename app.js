@@ -63,12 +63,13 @@ var main_temp=()=>html`
 `;
 
 var name="Ruth";
+
 var hello_fn=()=>{
-  alert("hello fn data");
+  alert(`hello ${imob.inf}`);
 }
 
 let change_st=e=>{
-  imob.inf="Maud"
+  imob.inf=name;
 //  alert(imob.inf);
 //   console.log(imob.inf);
 }
