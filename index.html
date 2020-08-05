@@ -20,8 +20,38 @@
 <div id="main_temp"></div>
 <div id="lit"></div>
 <div id="radio"></div>
+<div id="btm_menu"></div>
 
-<script src='./main.js'></script>
+<div id="root"></div>
+<!--
+<script src="https://unpkg.com/mobx@3.3.1/lib/mobx.umd.min.js"></script>
+<script src="https://unpkg.com/mobx-state-tree@1.1.0/dist/mobx-state-tree.umd.js"></script>
+<script type="module">
+  var { autorun } = mobx;
+  var { types } = mobxStateTree;
+  import { html, render } from "https://unpkg.com/lit-html@0.7.1/lib/lit-extended.js";
+
+  var my_store = types
+    .model({
+      name: types.string,
+    })
+    .actions(self => ({
+      set_name(name) {
+        self.name = name;
+      },
+    }));
+
+  var view = store => html`
+    <p><input value="${store.name}" on-input="${e => store.set_name(e.target.value)}" /></p>
+    <h2>Hello, ${store.name}!</h2>
+  `;
+
+  var store = my_store.create({name: "Ivvi"});
+  autorun(() => {
+    render(view(store), document.querySelector("#root"));
+  });
+</script>-->
+<script type="module" src='./main.js'></script>
 <script type="module" src='./app.js'></script>
 </body>
 </html>

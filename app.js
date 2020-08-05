@@ -1,4 +1,9 @@
 import {html, render} from 'https://unpkg.com/lit-html?module';
+//import "https://unpkg.com/mobx@3.3.1/lib/mobx.umd.min.js";
+import imob from "./mobx_store.js";
+//import { observer } from './modules/mobx_preact.module.js';
+import { autorun } from './modules/mobx.module.js';
+
 
 var menu_1=()=>html`
 <div class="bar">
@@ -25,7 +30,6 @@ var menu_1=()=>html`
 </nav>
 </div>
 `;
-
 
 var menu_2=()=>html`
 <div>
@@ -63,9 +67,10 @@ var hello_fn=()=>{
   alert("hello fn data");
 }
 
-let change_st=()=>{
-//  name="Maud"
-  alert(name);
+let change_st=e=>{
+  imob.inf="Maud"
+//  alert(imob.inf);
+//   console.log(imob.inf);
 }
 
 var dat_temp=html`
@@ -75,8 +80,10 @@ var dat_temp=html`
 var my_name=()=>html`
 <div>
   <h6>hello ${name}</h6>
+  <input placeholder="${imob.inf}" @input="${e=>imob.inf=e.target.value}"  />
+  <h2>${imob.inf}</h2>
   ${dat_temp}
-  <button @click=${change_st}>change</button>
+  <button value="change" @click=${change_st}>change</button>
 
   <style>
   h6{
@@ -89,24 +96,34 @@ var my_name=()=>html`
     background-color: black;
   }
   </style>
-<div>`;
+<div>`
 
 var radio=()=>html`
-<div id="audio">
-  <h6>dubstep beyond</h6>
-  <audio controls>
-   <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
-  </audio>
-  <h6>Пикник - Вампирские песни 1995</h6>
-  <audio controls>
-   <source src="./audio/Пикник - Вампирские песни 1995.mp3" type="audio/mpeg">
-  </audio>
+<div class="audio_cont">
+  <div id="audio">
+    <h6>dubstep beyond</h6>
+    <audio controls>
+     <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+    </audio>
+    <h6>Пикник - Вампирские песни 1995</h6>
+    <audio controls>
+     <source src="./audio/Пикник - Вампирские песни 1995.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 </div>
+`;
+
+var btm_menu=()=>html`
+  <div id='b_menu'>
+  </div>
 `;
 
 
 render(menu_1(), document.getElementById("menu_1_t"))
 render(menu_2(), document.getElementById("menu_2_t"))
 render(main_temp(), document.getElementById("main_temp"))
-render(my_name(), document.getElementById("lit"))
+autorun(()=>{
+  render(my_name(), document.getElementById("lit"))
+})
 render(radio(), document.getElementById("radio"))
+render(btm_menu(), document.getElementById("btm_menu"))

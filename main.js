@@ -1,3 +1,7 @@
+//import  my_name  from "./app,js"
+
+//render(my_name(), document.getElementById("lit"));
+
 $(function(){
 
 //menu_1
@@ -14,4 +18,10 @@ $(function(){
   $('.bar_1').on('click', function(){
   $('.mobile2').fadeToggle(200);
   })
+//btm_menu
+$('.audio_cont').hide();
+  $('#b_menu').on('click', function(){
+    $('.audio_cont').slideToggle(200)
+  })
+
 })
