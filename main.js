@@ -24,4 +24,16 @@ $('.audio_cont').hide();
     $('.audio_cont').slideToggle(200)
   })
 
+//ch_mode
+  $('#night').hide();
+  $('#mode').on('click', ()=>{
+    $('#day').hide();
+    $('#night').show();
+    $('body').css({background: 'black'})
+  })
+  $('#night').on('click', ()=>{
+    $('#day').show();
+    $('#night').hide();
+    $('body').css({background: '#f8f8ff'})
+  })
 })

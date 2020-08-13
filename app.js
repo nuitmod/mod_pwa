@@ -58,7 +58,8 @@ var menu_2=()=>html`
 
 var main_temp=()=>html`
 <div class="">
-  <img src="./img/mode.jpg" alt="" height="122" width="52">
+  <img id="day" src="./img/mode.jpg" alt="" height="122" width="52">
+  <img id="night" src="./img/img_mod.png" alt="" height="65" width="122">
 </div>
 `;
 
@@ -78,6 +79,13 @@ var dat_temp=html`
   <button @click=${hello_fn}>click</button>
 `;
 
+var wm_list=imob.data.map(wm=>html`
+    <div class="list" key=${wm.id}>
+      <div>name: ${wm.name} </div>
+      <div>job: ${wm.job} </div>
+   </div>`
+  )
+
 var my_name=()=>html`
 <div>
   <h6>hello ${name}</h6>
@@ -85,6 +93,8 @@ var my_name=()=>html`
   <h2>${imob.inf}</h2>
   ${dat_temp}
   <button value="change" @click=${change_st}>change</button>
+  <button id="mode" value="night mode" >night mode</button>
+  ${wm_list}
 
   <style>
   h6{
@@ -123,8 +133,6 @@ var btm_menu=()=>html`
 render(menu_1(), document.getElementById("menu_1_t"))
 render(menu_2(), document.getElementById("menu_2_t"))
 render(main_temp(), document.getElementById("main_temp"))
-autorun(()=>{
-  render(my_name(), document.getElementById("lit"))
-})
+autorun(()=>render(my_name(), document.getElementById("lit")))
 render(radio(), document.getElementById("radio"))
 render(btm_menu(), document.getElementById("btm_menu"))
