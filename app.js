@@ -111,7 +111,7 @@ var my_name=()=>html`
   }
   </style>
 <div>`
-
+/*
 var radio=()=>html`
 <div class="audio_cont">
   <div id="audio">
@@ -132,7 +132,7 @@ var btm_menu=()=>html`
   </div>
 `;
 
-
+*/
 //render(menu_1(), document.getElementById("menu_1_t"))
 render(menu_2(), document.getElementById("menu_2_t"))
 render(main_temp(), document.getElementById("main_temp"))

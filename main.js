@@ -23,12 +23,12 @@ $('.audio_cont').hide();
 //ch_mode
   $('#night').hide();
   $('#mode').on('click', function(){
-    $('#day').hide();
+  //  $('#day').hide();
     $('#night').show();
     $('body').css({background: 'black'})
   })
   $('#night').on('click', function(){
-    $('#day').show();
+  //  $('#day').show();
     $('#night').hide();
     $('body').css({background: '#f8f8ff'})
   })
