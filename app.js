@@ -137,5 +137,5 @@ var btm_menu=()=>html`
 render(menu_2(), document.getElementById("menu_2_t"))
 render(main_temp(), document.getElementById("main_temp"))
 autorun(()=>render(my_name(), document.getElementById("lit")))
-render(radio(), document.getElementById("radio"))
+//render(radio(), document.getElementById("radio"))
 //render(btm_menu(), document.getElementById("btm_menu"))
