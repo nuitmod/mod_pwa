@@ -3,7 +3,7 @@ $(function(){
 //menu_1
   $('.mobile-tab').hide();
   $('.bar').on('click', function(){
-    $('.mobile-tab').slideToggle(399)
+    $('.mobile-tab').slideToggle(599)
   })
 
 //menu_2
@@ -16,8 +16,8 @@ $(function(){
   })
 //btm_menu
 $('.audio_cont').hide();
-  $('#b_menu').on('click', function(){
-    $('.audio_cont').slideToggle(200)
+  $('#hdr').on('click', function(){
+    $('.audio_cont').fadeToggle(200)
   })
 
 //ch_mode
@@ -33,7 +33,7 @@ $('.audio_cont').hide();
     $('body').css({background: '#f8f8ff'})
   })
 //img
-  $('.data').hide();
+  $('#day').hide();
   $('img').on('mouseenter', function(e){
 //   $('.data').html(e.target.id)
 //  console.log(e.target.title);

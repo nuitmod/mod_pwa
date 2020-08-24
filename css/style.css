@@ -108,7 +108,7 @@ audio{
   width: 220px;
   background: rgba(0,0,0,0.9);
   position: absolute;
-  bottom: 10px;
+  top: 15px;
 }
 input,h6{
   color: #684e5b;
