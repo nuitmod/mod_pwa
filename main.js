@@ -48,12 +48,12 @@ $('#b_main').on('click', function(){
      console.log(e);
   console.log(e.target.id + " out");
   })
-*/
+
   $('.list').on('click', function(e){
    $(this, 'ul').toggle(200)
   console.log(e.target.id);
   console.log(this);
   })
-
+*/
 
 })
