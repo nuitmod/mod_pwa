@@ -84,19 +84,22 @@ var dat_temp=html`
 
 var wm_list=imob.data.map(wm=>html`
     <div class="list" key=${wm.id}>
-      <div>name: ${wm.name} </div>
-      <div>job: ${wm.job} </div>
+      <img id=${wm.img_id} src="./img/${wm.img_id}.JPG"  height="89" width="52" />
+      <ul>
+        <li>name: ${wm.name} </li>
+        <li>job: ${wm.job} </li>
+      </ul>
    </div>`
   )
 
 var my_name=()=>html`
 <div>
-  <h6>hello ${name}</h6>
   <input placeholder="${imob.inf}" @input="${e=>imob.inf=e.target.value}"  />
   <h2>${imob.inf}</h2>
   ${dat_temp}
   <button value="change" @click=${change_st}>change</button>
   <button id="mode" value="night mode" >night mode</button>
+  <br>
   ${wm_list}
 
   <style>

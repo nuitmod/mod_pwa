@@ -8,9 +8,11 @@ var imob={
     imob.inf="Ruth"; console.log(imob.inf);
   }, */
   data: [
-    { name: 'Maud', job: 'security', active: true, id: 1},
-    { name: 'Ruth', job: 'programmer', active: true, id: 2},
-    { name: 'Muit',job: 'contacter', active: false, id: 3}
+    { name: 'Maud', job: 'security', active: true, id: 1, img_id: 'md_1'},
+    { name: 'Ruth', job: 'programmer', active: true, id: 2, img_id: 'md_2'},
+    { name: 'Muit', job: 'contacter', active: false, id: 3, img_id: 'md_3'},
+    { name: 'Iwie', job: 'dark matter daughter', active: false, id: 4, img_id: 'md_4'},
+    { name: 'Iiya', job: 'void', active: false, id: 5, img_id: 'md_5'}
   ],
   del_w: id=>{
     imob.data=imob.data.filter(wm=>{

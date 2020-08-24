@@ -1,11 +1,11 @@
 $(function(){
 
-//menu_1
+/*menu_1
   $('.mobile-tab').hide();
   $('.bar').on('click', function(){
     $('.mobile-tab').slideToggle(599)
   })
-
+*/
 //menu_2
   $('.mobile2').hide();
   $('.mobile2').on('click', function(){
@@ -34,12 +34,25 @@ $('.audio_cont').hide();
   })
 //img
   $('#day').hide();
-  $('img').on('mouseenter', function(e){
-//   $('.data').html(e.target.id)
-//  console.log(e.target.title);
+
+$('#b_main').on('click', function(){
+  $('.item').fadeToggle(500)
+})
+//  $('.info').hide();
+/*
+  $('.list').on('mouseenter', function(e){
+   $(this, '.info').fadeIn(200)
+  console.log(e.target.id);
   }).on('mouseleave', function(e){
-    // $('.data').fadeOut(200)
-//  console.log(this.id + " out");
+     $(this,'.info').fadeOut(200)
+     console.log(e);
+  console.log(e.target.id + " out");
+  })
+*/
+  $('.list').on('click', function(e){
+   $(this, 'ul').toggle(200)
+  console.log(e.target.id);
+  console.log(this);
   })
 
 
