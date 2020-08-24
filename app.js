@@ -45,6 +45,9 @@ var menu_2=()=>html`
           <li><a href="https://nuitmod.github.io/pre_iproj">pre_iproj</a></li>
           <li><a href="https://nuitmod.github.io/uwsgi_kali/i_uwsgi">i_uwsgi</a></li>
           <li><a href="https://nuitmod.github.io/nata_pwa_">nata</a></li>
+          <li><a href="https://nuitmod.github.io/vi_pwa">vi_pwa</a></li>
+          <li><a href="https://nuitmod.github.io/io_proj">io_pr</a></li>
+          <li><a href="https://nuitmod.github.io/mod_pwa">in browser</a></li>
           <li><a href="https://yoox.com">yoox.com</a></li>
           <li>
             <a href="#home"><img id="b_main" src="./icons/visibility-24px.svg"></a>
@@ -58,7 +61,7 @@ var menu_2=()=>html`
 
 var main_temp=()=>html`
 <div class="">
-  <img id="day" src="./img/mode.jpg" alt="" height="122" width="52">
+  <img id="day" src="./img/mode.jpg" alt="" height="89" width="42">
   <img id="night" src="./img/img_mod.png" alt="" height="65" width="122">
 </div>
 `;
@@ -130,7 +133,7 @@ var btm_menu=()=>html`
 `;
 
 
-render(menu_1(), document.getElementById("menu_1_t"))
+//render(menu_1(), document.getElementById("menu_1_t"))
 render(menu_2(), document.getElementById("menu_2_t"))
 render(main_temp(), document.getElementById("main_temp"))
 autorun(()=>render(my_name(), document.getElementById("lit")))

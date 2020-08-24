@@ -1,8 +1,8 @@
-const cacheName = 'mod_pwa-v2';
+const cacheName = 'mod_pwa-v3';
 const staticAssets = [
   './',
   './index.html',
-  './styles.css',
+  './css/style.css',
   './main.js',
   './app.js',
   './img/mode.jpg'

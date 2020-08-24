@@ -5,7 +5,7 @@
 body{
   background: #f8f8ff; //#0f0f0f;
   opasity: 0.39;
-  font-size: 10px;
+  font-size: 11px;
 }
 /*
 #burg a{
@@ -92,6 +92,10 @@ span{
 
 img{
   opacity: 1;
+  margin: 22px 3px;
+}
+img:hover{
+  opacity: 0.5;
 }
 audio{
   height: 10px;
@@ -101,7 +105,7 @@ audio{
   z-index: 12;
 }
 .audio_cont{
-  width: 270px;
+  width: 220px;
   background: rgba(0,0,0,0.9);
   position: absolute;
   bottom: 10px;
@@ -190,3 +194,9 @@ button{
     position: absolute;
     bottom: 0;
   }
+  #hdr{
+  height: 15px;
+  width: 100%;
+  color: ghostwhite;
+  background: #000;
+}

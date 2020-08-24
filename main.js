@@ -1,7 +1,3 @@
-//import  my_name  from "./app,js"
-
-//render(my_name(), document.getElementById("lit"));
-
 $(function(){
 
 //menu_1
@@ -26,14 +22,25 @@ $('.audio_cont').hide();
 
 //ch_mode
   $('#night').hide();
-  $('#mode').on('click', ()=>{
+  $('#mode').on('click', function(){
     $('#day').hide();
     $('#night').show();
     $('body').css({background: 'black'})
   })
-  $('#night').on('click', ()=>{
+  $('#night').on('click', function(){
     $('#day').show();
     $('#night').hide();
     $('body').css({background: '#f8f8ff'})
   })
+//img
+  $('.data').hide();
+  $('img').on('mouseenter', function(e){
+//   $('.data').html(e.target.id)
+//  console.log(e.target.title);
+  }).on('mouseleave', function(e){
+    // $('.data').fadeOut(200)
+//  console.log(this.id + " out");
+  })
+
+
 })
