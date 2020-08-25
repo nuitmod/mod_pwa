@@ -1,6 +1,6 @@
 import {html, render} from 'https://unpkg.com/lit-html?module';
 import imob from "./mobx_store.js";
-import { autorun } from '../modules/mobx.module.js';
+import { autorun, toJS } from '../modules/mobx.module.js';
 
 var name="Ruth";
 
@@ -8,14 +8,43 @@ let change_st=e=>{
   imob.inf=name;
 }
 
-var wm_list=imob.data.map(wm=>html`
+var show_item=e=>{
+  console.log(e.target.id);
+//  render()
+}
+
+var filter_1=wm=>{
+  return wm.active!=false;
+}
+
+
+var term=imob.data.map(w=>toJS(w)); console.log(term);
+
+var add_to_bug=e=>{
+  console.log(e.target.id);
+  console.log(term)
+}
+
+var big_item=imob.data.filter(wm=>wm.active!=false).map(wm=>html`
+  <div class="big_i">
+    <img id=${wm.img_id} src="./img/${wm.img_id}.JPG"  height="109" width="72" />
+    <div>
+      <li>name: ${wm.name} </li>
+      <li>color: ${wm.color} </li>
+      <li>category: ${wm.category} </li>
+      <button id=${wm.img_id} @click=${add_to_bug}>add</button>
+    </div>
+  </div>`)
+
+
+var wm_list=imob.data.filter(wm=>wm.id!=4).map(wm=>html`
     <div class="list" key=${wm.id}>
       <img id=${wm.img_id} src="./img/${wm.img_id}.JPG"  height="89" width="52" />
       <div>
         <li>name: ${wm.name} </li>
         <li>color: ${wm.color} </li>
         <li>category: ${wm.category} </li>
-        <button id="show" value="show" @click=${change_st}>show</button>
+        <button id=${wm.img_id} class="show" value="show" @click=${()=>imob.set_active(wm)}>show</button>
       </div>
    </div>`
   )
@@ -28,9 +57,11 @@ var i_search=()=>html`
   <h4>${imob.inf}</h4>
   <br>
   ${wm_list}
+  ${big_item}
 <div>`
 
 
 
 autorun(()=>render(i_search(), document.getElementById("lit")))
+//autorun(()=>render(big_item, document.getElementById("big_it")))
 //export default autorun(i_search);

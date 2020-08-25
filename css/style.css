@@ -215,13 +215,12 @@ button{
 }
 .list {
   display: inline-flex;
-  max-width: 180px;
+  max-width: 190px;
 }
 .list img{
   margin: 5px 3px;
 }
 .list div{
-
   opacity: 0
 }
 .list:hover > div{
@@ -230,7 +229,7 @@ button{
 .list:hover img{
   opacity: 0.1
 }
-#show{
+.show{
   position:relative;
   bottom: -41px;
   text-align: center;
@@ -241,7 +240,7 @@ button{
     position: fixed;
     top: 0;
     background :rgba(0, 0, 0, 0.8);
-    width: 229px;
+    width: 239px;
     height: 100vh;
     color: black;
     display: flex;
@@ -271,4 +270,15 @@ button{
 .open {
     display: flex;
     transform: translateX(0);
+}
+/*big item */
+.big_i{
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 55px;
+
+}
+.big_i div{
+  position: relative;
+  float: right;
+
 }

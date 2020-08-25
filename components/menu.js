@@ -32,9 +32,9 @@ var menu_1=()=>html`
 var item_menu=()=>html`
 <nav class="mobile">
         <ul class="mobile__items">
-        <li><a href="#">Dress</a></li>
-        <li><a href="#">Tops</a></li>
-        <li><a href="#">Skirts</a></li>
+        <li><a id="dress" href="#">Dress</a></li>
+        <li><a id="tops" href="#">Tops</a></li>
+        <li><a id="skirts" href="#">Skirts</a></li>
         </ul>
       </nav>
 `;
@@ -55,8 +55,8 @@ var menu_2=()=>html`
           <li><a href="https://nuitmod.github.io/mod_pwa">in browser</a></li>
           <li><a href="https://yoox.com">yoox.com</a></li>
           <li>
-            <a href="#home"><img id="b_main" src="./icons/visibility-24px.svg"></a>
-            <a href="#rend"><img id="b_radio" src="./icons/visibility_off-24px.svg"></a>
+            <a href="#home"><img id="b_main_on" src="./icons/visibility-24px.svg"></a>
+            <a href="#rend"><img id="b_main_off" src="./icons/visibility_off-24px.svg"></a>
           </li>
       </ul>
     </nav>

@@ -25,12 +25,12 @@ $('.audio_cont').hide();
   $('#night').hide();
   $('#mode').on('click', function(){
   //  $('#day').hide();
-    $('#night').show();
+  //  $('#night').show();
     $('body').css({background: 'black'})
   })
-  $('#night').on('click', function(){
+  $('#b_main_off').on('click', function(){
   //  $('#day').show();
-    $('#night').hide();
+  //  $('#night').hide();
     $('body').css({background: '#f8f8ff'})
   })
 //img
@@ -47,6 +47,19 @@ $('#hdr').on('click', function(){
 })
 $('.mobile').on('click', function(){
   $('.mobile').removeClass('open')
+})
+
+$('.big_i').hide();
+$('.show').on('click', e=>{
+  console.log(e.target.id);
+  $('.big_i').show()
+})
+
+$('.mobile__items a').on('click', e=>{
+  var id=e.target.id
+  var this_id= this.id
+  console.log(id); console.log(this_id);
+  alert(id)
 })
 
 })
