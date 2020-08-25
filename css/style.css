@@ -119,10 +119,11 @@ input,h6{
 }
 button{
   color: #0f0f0f;
-  height: 2px;
+  height: 9px;
   background-color: black;
   border: 0;
 }
+
   /*menu2*/
 
   #burg_1{
@@ -140,6 +141,7 @@ button{
   .menu{
     position: absolute;
     right: 0;
+
   }
     #burg_2{
     background :rgba(0, 0, 0, 1);
@@ -197,7 +199,7 @@ button{
     background: #684e5b; #FF6699;
     margin: 0 2px;
   }
-  /*btm_menu*/
+/*btm_menu*/
   #b_menu{
     width: 100%;
     height: 12px;
@@ -205,7 +207,7 @@ button{
     position: absolute;
     bottom: 0;
   }
-  #hdr{
+#hdr{
   height: 15px;
   width: 100%;
   color: ghostwhite;
@@ -214,18 +216,59 @@ button{
 .list {
   display: inline-flex;
   max-width: 180px;
-
 }
 .list img{
   margin: 5px 3px;
 }
-.list ul{
+.list div{
 
   opacity: 0
 }
-.list:hover > ul{
+.list:hover > div{
   opacity: 1;
 }
 .list:hover img{
   opacity: 0.1
+}
+#show{
+  position:relative;
+  bottom: -41px;
+  text-align: center;
+}
+
+/*Item menu*/
+.mobile {
+    position: fixed;
+    top: 0;
+    background :rgba(0, 0, 0, 0.8);
+    width: 229px;
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-out;
+    z-index: 1;
+}
+.mobile__items li{
+  list-style-type: none;
+  position: relative;
+  top: 20px;
+  margin: 42%;
+}
+.mobile__items a:hover{
+  color: black;
+  background-color: ghostwhite;
+}
+.mobile__items a{
+  font-size: 1em;
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.open {
+    display: flex;
+    transform: translateX(0);
 }
