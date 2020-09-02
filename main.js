@@ -45,14 +45,14 @@ $('#b_main_on').on('click', e=>{
 $('#b_main_off').on('click', e=>{
   $('.list').hide()
 })
-$('#vis_on').on('click', ()=>{
+$('#vis_on').on('click', function(){
   $('.audio_cont').fadeIn(290);
 })
-$('#vis_off').on('click', ()=>{
+$('#vis_off').on('click', function(){
   $('.audio_cont').fadeOut(290);
 })
 
-$('.mobile__items a').on('click', e=>{
+$('.mobile__items a').on('click', function(){
 //  var id=e.target.id
 //  var this_id= this.id
 //  console.log(id); console.log(this_id);

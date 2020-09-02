@@ -16,4 +16,4 @@ var radio=()=>html`
 </div>`;
 
 //export default radio;
-autorun(()=>render(radio(), document.getElementById("radio")))
+//autorun(()=>render(radio(), document.getElementById("radio")))
