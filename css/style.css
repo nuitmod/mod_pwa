@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-  background: #f8f8ff; //#0f0f0f;
+  background: black; #f8f8ff; //#0f0f0f;
   opasity: 0.39;
   font-size: 11px;
 }
@@ -102,16 +102,15 @@ img:hover{
 */
 audio{
   height: 10px;
-  width: 242px;
+  width: 239px;
   color: black;
-
   z-index: 12;
 }
 .audio_cont{
-  width: 260px;
-  background: rgba(0,0,0,0.9);
+  width: 100%; 290px;
+  background: black;;rgba(0,0,0,0.9);
   position: absolute;
-  top: 15px;
+  bottom: 0;
 }
 input,h6{
   color: #684e5b;
@@ -124,8 +123,7 @@ button{
   border: 0;
 }
 
-  /*menu2*/
-
+/*menu2*/
   #burg_1{
     padding: 5px 0 5px 90%;
     color: #684e5b; //#FF6699;
@@ -158,8 +156,7 @@ button{
   .mobile2 {
     position: fixed;
     top: 0;
-    display: block;
-    background :rgba(0, 0, 0, 0.7);
+    background :rgba(0, 0, 0, 0.8);
     width: 259px;
     height: 519px;
     text-align: center;
@@ -169,26 +166,26 @@ button{
   }
   .mobile_items2 a{
     font-size: 12px;
-    color: black; #684e5b; //#FF6699;
+    color: black;#684e5b;
     text-decoration: none;
     letter-spacing: 1px;
   }
   .mobile_items2 li{
     display: block;
     list-style-type: none;
-    margin-top: 8%;
+    margin-top: 6%;
     color: black;
     cursor: pointer;
-    text-align: center;
     transition: all .2s ease-in-out;
   }
 .mobile_items2  li:hover{
     background: black;
-    opacity: .0;
-    box-shadow: inset 1px 1px 5px grey;
+/*    opacity: .0;
+/*    box-shadow: inset 1px 1px 5px black;*/
   }
 .mobile_items2  li:hover a{
-    color: black;
+    color: #684e5b;
+
   }
   .mobile_items2 ul{
     display: block;
@@ -197,25 +194,27 @@ button{
   }
   .mobile_items2 img{
     background: #684e5b; #FF6699;
-    margin: 0 2px;
+    margin: -5px 2px;
   }
 /*btm_menu*/
-  #b_menu{
-    width: 100%;
-    height: 12px;
-    background-color: #000;
-    position: absolute;
-    bottom: 0;
-  }
+#b_menu{
+  width: 100%;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+}
+
 #hdr{
   height: 15px;
   width: 100%;
-  color: ghostwhite;
+  color: #684e5b;
   background: #000;
 }
 .list {
   display: inline-flex;
   max-width: 190px;
+  margin-right: 15px;
 }
 .list img{
   margin: 5px 3px;
@@ -239,39 +238,40 @@ button{
 .mobile {
     position: fixed;
     top: 0;
-    background :rgba(0, 0, 0, 0.8);
+    background :rgba(0, 0, 0, 0.9);
     width: 239px;
     height: 100vh;
     color: black;
-    display: flex;
-    justify-content: center;
     text-align: center;
     transform: translateX(-100%);
     transition: transform 300ms ease-out;
-    z-index: 1;
+    z-index: 99;
+}
+.mobile__items ul{
+  text-align: center;
 }
 .mobile__items li{
   list-style-type: none;
   position: relative;
   top: 20px;
-  margin: 42%;
-}
-.mobile__items a:hover{
-  color: black;
-  background-color: ghostwhite;
+  margin-top: 12px;
+
 }
 .mobile__items a{
   font-size: 1em;
   color: ghostwhite;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 1px;
 }
+.mobile__items a:hover{
+  color: black;
+  background-color: ghostwhite;
+}
 .open {
-    display: flex;
     transform: translateX(0);
 }
-/*big item */
+/*big item
 .big_i{
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 55px;
@@ -282,3 +282,4 @@ button{
   float: right;
 
 }
+*/

@@ -1,4 +1,5 @@
 import {html, render} from 'https://unpkg.com/lit-html?module';
+import { autorun } from '../modules/mobx.module.js';
 
 var radio=()=>html`
 <div class="audio_cont">
@@ -14,4 +15,5 @@ var radio=()=>html`
   </div>
 </div>`;
 
-export default radio;
+//export default radio;
+autorun(()=>render(radio(), document.getElementById("radio")))

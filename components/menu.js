@@ -51,12 +51,17 @@ var menu_2=()=>html`
           <li><a href="https://nuitmod.github.io/uwsgi_kali/i_uwsgi">i_uwsgi</a></li>
           <li><a href="https://nuitmod.github.io/nata_pwa_">nata</a></li>
           <li><a href="https://nuitmod.github.io/vi_pwa">vi_pwa</a></li>
-          <li><a href="https://nuitmod.github.io/io_proj">io_pr</a></li>
+          <li><a href="https://nuitmod.github.io/io_proj">io_proj</a></li>
+          <li><a href="https://nuitmod.github.io/mod_i">mod_i</a></li>
           <li><a href="https://nuitmod.github.io/mod_pwa">in browser</a></li>
           <li><a href="https://yoox.com">yoox.com</a></li>
           <li>
-            <a href="#home"><img id="b_main_on" src="./icons/visibility-24px.svg"></a>
-            <a href="#rend"><img id="b_main_off" src="./icons/visibility_off-24px.svg"></a>
+            <a href="#"><img id="b_main_on" src="./icons/visibility-24px.svg"></a>
+            <a href="#"><img id="b_main_off" src="./icons/visibility_off-24px.svg"></a>
+          </li>
+          <li>
+            <a href="#"><img id="vis_on" src="./icons/check_box-24px.svg"></a>
+            <a href="#"><img id="vis_off" src="./icons/poll-24px.svg"></a>
           </li>
       </ul>
     </nav>

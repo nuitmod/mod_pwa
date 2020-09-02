@@ -7,22 +7,24 @@ var name="Ruth";
 let change_st=e=>{
   imob.inf=name;
 }
-
+/*
 var show_item=e=>{
   console.log(e.target.id);
-//  render()
+  //render(big_item, document.getElementById("big_it"))
 }
 
 var filter_1=wm=>{
   return wm.active!=false;
 }
 
-
 var term=imob.data.map(w=>toJS(w)); console.log(term);
-
 var add_to_bug=e=>{
   console.log(e.target.id);
   console.log(term)
+}
+
+var show_big=()=>{
+  autorun(()=>render(big_item, document.getElementById("big_it")))
 }
 
 var big_item=imob.data.filter(wm=>wm.active!=false).map(wm=>html`
@@ -32,11 +34,12 @@ var big_item=imob.data.filter(wm=>wm.active!=false).map(wm=>html`
       <li>name: ${wm.name} </li>
       <li>color: ${wm.color} </li>
       <li>category: ${wm.category} </li>
+      <li>active: ${wm.active} </li>
       <button id=${wm.img_id} @click=${add_to_bug}>add</button>
     </div>
   </div>`)
 
-
+*/
 var wm_list=imob.data.filter(wm=>wm.id!=4).map(wm=>html`
     <div class="list" key=${wm.id}>
       <img id=${wm.img_id} src="./img/${wm.img_id}.JPG"  height="89" width="52" />
@@ -46,8 +49,7 @@ var wm_list=imob.data.filter(wm=>wm.id!=4).map(wm=>html`
         <li>category: ${wm.category} </li>
         <button id=${wm.img_id} class="show" value="show" @click=${()=>imob.set_active(wm)}>show</button>
       </div>
-   </div>`
-  )
+   </div>`)
 
 var i_search=()=>html`
 <div>
@@ -57,7 +59,6 @@ var i_search=()=>html`
   <h4>${imob.inf}</h4>
   <br>
   ${wm_list}
-  ${big_item}
 <div>`
 
 
