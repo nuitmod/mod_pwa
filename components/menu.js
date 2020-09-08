@@ -32,9 +32,9 @@ var menu_1=()=>html`
 var item_menu=()=>html`
 <nav class="mobile">
         <ul class="mobile__items">
-        <li><a id="dress" href="#">Dress</a></li>
-        <li><a id="tops" href="#">Tops</a></li>
-        <li><a id="skirts" href="#">Skirts</a></li>
+        <li><a id="dress" href="#">dress</a></li>
+        <li><a id="tops" href="#">tops</a></li>
+        <li><a id="skirts" href="#">skirts</a></li>
         </ul>
       </nav>
 `;

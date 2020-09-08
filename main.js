@@ -38,7 +38,7 @@ $('.mobile').on('click', function(){
   $('.mobile').removeClass('open')
 })
 
-//$('.big_i').hide();
+$('.list').hide();
 $('#b_main_on').on('click', e=>{
   $('.list').show()
 })

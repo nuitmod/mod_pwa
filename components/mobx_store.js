@@ -17,14 +17,12 @@ var imob={
       wm.active=false
       w.active=true;
     })
-    console.log(toJS(imob.data));
-    console.log(w.id);
+  //  console.log(toJS(imob.data));
+  //  console.log(w.id);
   },
   del_w: id=>{
-    imob.data=imob.data.filter(wm=>{
-      return wm.id != id
-    });
-    console.log(imob.data.map(i=>i.name));
+    imob.data=imob.data.filter(wm=>wm.id != id);
+  //  console.log(imob.data.map(i=>i.name));
   }
 }
 
