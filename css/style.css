@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-  background: black; #f8f8ff; //#0f0f0f;
+  background: black; #f8f8ff; #0f0f0f;
   opasity: 0.39;
   font-size: 11px;
 }
@@ -116,7 +116,7 @@ p{
 }
 
 input,h6{
-  color: #684e5b;
+  color: #f7236a; #684e5b;
   background-color: black;
 }
 button{
@@ -129,10 +129,10 @@ button{
 /*menu2*/
 #burg_1{
   padding: 5px 0 5px 90%;
-  color: #684e5b; //#FF6699;
+  color: #f7236a; #684e5b; #FF6699;
 }
 .bar_1{
-  color: #000; //#FF6699;
+  color: #f7236a; #000; //#FF6699;
   margin: 2px;
   width: 22px;
   height: 8px;
@@ -169,7 +169,7 @@ button{
 }
 .mobile_items2 a{
   font-size: 12px;
-  color: black;#684e5b;
+  color: black; #684e5b;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -187,7 +187,7 @@ button{
     box-shadow: inset 1px 1px 5px black;*/
   }
 .mobile_items2  li:hover a{
-    color: #684e5b;
+    color: #f7236a; #684e5b;
 
 }
 .mobile_items2 ul{
@@ -196,7 +196,7 @@ button{
   padding: 0 0;
 }
 .mobile_items2 img{
-  background: #684e5b; #FF6699;
+  background: #f7236a; #684e5b; #FF6699;
   margin: -5px 2px;
 }
 /*btm_menu*/
@@ -211,7 +211,7 @@ button{
 #hdr{
   height: 15px;
   width: 100%;
-  color: #684e5b;
+  color: #f7236a; #684e5b;
   background: #000;
 }
 .list {

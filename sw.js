@@ -1,11 +1,12 @@
-const cacheName = 'mod_pwa-v5';
+const cacheName = 'mod_pwa-v6';
 const staticAssets = [
   './',
   './index.html',
   './css/style.css',
   './main.js',
   './app.js',
-  './img/mode.jpg'
+  './img/mode.jpg',
+  './img/img_mod.png'
 ];
 
 self.addEventListener('install', async e => {
