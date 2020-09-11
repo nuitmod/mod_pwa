@@ -1,5 +1,11 @@
 $(function(){
 
+  $('#menu_u').hide();
+
+$('#u').on('click', function(){
+  $('#menu_u').fadeToggle(399);
+})
+
 /*menu_1
   $('.mobile-tab').hide();
   $('.bar').on('click', function(){
