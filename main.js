@@ -32,8 +32,9 @@ $('.audio_cont').hide();
   $('#main_mod').on('click', function(){
     $('body').css({background: '#f8f8ff'})
   })
-  $('.audio_cont').on('click', function(){
+  $('#dark').on('click', function(){
     $('body').css({background: 'black'})
+    $('#u').css({background: '#f7236a'})
   })
 
 
