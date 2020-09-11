@@ -41,10 +41,6 @@ var item_menu=()=>html`
 
 var menu_2=()=>html`
 <div>
-  <div id="burg_1">
-    <span class="bar_1" id=""></span>
-    <span class="bar_u" id="u"></span>
-  </div>
   <div class="mob2">
     <nav class="mobile2">
       <ul class="mobile_items2">

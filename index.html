@@ -15,9 +15,7 @@
   <title>mod_pwa</title>
 </head>
 <body>
-<div id="hdr">
-  <button type="button" name="button" id="und">und</button>
-</div>
+<div id="hdr"></div>
 <div id="menu_u">
   <ul>
     <a href="https://nuitmod.github.io/io_proj">io_proj</a>
@@ -28,6 +26,10 @@
 </div>
 <div id="app"></div>
 <div id="i_menu"></div>
+<div id="burg_1">
+  <span class="bar_1" id=""></span>
+  <span class="bar_u" id="u"></span>
+</div>
 <div id="menu_2_t"></div>
 <div id="main_temp"></div>
 <img id="main_mod" src="./img/img_mod.png"  height="69" width="109" />
@@ -40,8 +42,6 @@
 </div>
 -->
 <div id="lit"></div>
-<div id="big_it"></div>
-<div id="radio"></div>
 <div class="audio_cont">
   <div id="audio">
     <p>dubstep beyond</p>
@@ -53,6 +53,22 @@
 <div id="btm_menu"></div>
 
 <div id="root"></div>
+<script>
+$(function(){
+  $('#menu_u').hide();
+
+  $('#u').on('click', function(){
+    $('#menu_u').fadeToggle(399);
+  })
+
+  $('#mode').on('click', function(){
+    $('body').css({background: 'black'})
+  })
+  $('#main_mod').on('click', function(){
+    $('body').css({background: '#f8f8ff'})
+  })
+})
+</script>
 
 <script type="module" src='./main.js'></script>
 <script type="module" src='./app.js'></script>
