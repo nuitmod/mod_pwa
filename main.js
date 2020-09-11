@@ -34,7 +34,7 @@ $('.audio_cont').hide();
   })
   $('#dark').on('click', function(){
     $('body').css({background: 'black'})
-    $('#u').css({background: '#f7236a'})
+//    $('#u').css({background: '#f7236a'});
   })
 
 
