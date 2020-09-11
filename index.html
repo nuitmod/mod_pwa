@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="io_proj" />
+  <meta name="apple-mobile-web-app-title" content="mod_pwa" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <link rel=icon sizes=192x192 href="assets/logo-192.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="manifest" href="manifest.webmanifest">
   <title>mod_pwa</title>
@@ -54,20 +53,18 @@
 
 <div id="root"></div>
 <script>
-$(function(){
   $('#menu_u').hide();
-
   $('#u').on('click', function(){
     $('#menu_u').fadeToggle(399);
   })
-
+/*
   $('#mode').on('click', function(){
     $('body').css({background: 'black'})
   })
   $('#main_mod').on('click', function(){
     $('body').css({background: '#f8f8ff'})
   })
-})
+*/
 </script>
 
 <script type="module" src='./main.js'></script>
