@@ -29,11 +29,11 @@ $('.audio_cont').hide();
 */
 //ch_mode
 //  $('#night').hide();
-  $('#mode').on('click', function(){
-    $('body').css({background: 'black'})
-  })
   $('#main_mod').on('click', function(){
     $('body').css({background: '#f8f8ff'})
+  })
+  $('.audio_cont').on('click', function(){
+    $('body').css({background: 'black'})
   })
 
 
