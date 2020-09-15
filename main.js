@@ -12,6 +12,13 @@ $('#u').on('click', function(){
     $('.mobile-tab').slideToggle(599)
   })
 */
+$('#main_mod').on('click', function(){
+  $('body').css({background: '#f8f8ff'})
+})
+$('#dark').on('click', function(){
+  $('body').css({background: 'black'})
+//    $('#u').css({background: '#f7236a'});
+})
 //menu_2
   $('.mobile2').hide();
   $('.mobile2').on('click', function(){
@@ -27,15 +34,7 @@ $('.audio_cont').hide();
     $('.audio_cont').fadeToggle(200)
   })
 */
-//ch_mode
-//  $('#night').hide();
-  $('#main_mod').on('click', function(){
-    $('body').css({background: '#f8f8ff'})
-  })
-  $('#dark').on('click', function(){
-    $('body').css({background: 'black'})
-//    $('#u').css({background: '#f7236a'});
-  })
+
 
 
 $('#hdr').on('click', function(){
