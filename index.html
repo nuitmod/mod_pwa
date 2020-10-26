@@ -20,7 +20,8 @@
     <a href="https://nuitmod.github.io/vi_pwa">vi_pwa</a>
     <a href="https://nuitmod.github.io/mod_i">mod_i</a>
     <a href="https://nuitmod.github.io/mod_pwa">in browser</a>
-    <a id="dark" href="#">dark</a>
+    <a id="dark">dark</a>
+    <a id="vid" >vid</a>
 </div>
 <div id="app"></div>
 <div id="i_menu"></div>
@@ -30,7 +31,7 @@
 </div>
 <div id="menu_2_t"></div>
 <div id="main_temp"></div>
-<img id="main_mod" src="./img/img_mod.png"  height="69" width="109" />
+<img id="main_mod" src="./img/img_mod.png"  height="59" width="99" />
 <!--
 <div class="item">
     <img id="md_3" src="./img/md_3.JPG" title="md_3 Long black dress" height="89" width="52">
@@ -47,7 +48,7 @@
 </div> -->
 <div id="vid_fo">
   <!--<iframe src="https://www.ecanlitvizle.live/embed.php?kanal=fashion-one-tv-canli" frameborder="0" height="100%" scrolling="no" width="100%" allowfullscreen=""></iframe>-->
-  <iframe src="https://www.ecanlitvizle.live/embed.php?kanal=fashion-one-tv-canli" frameborder="0" height="119px" scrolling="no" width="200px" allowfullscreen=""></iframe>
+  <iframe src="https://www.ecanlitvizle.live/embed.php?kanal=fashion-one-tv-canli" frameborder="0" height="98px" scrolling="no" width="175px" allowfullscreen=""></iframe>
 </div>
 <div class="audio_cont">
   <div id="audio">
@@ -70,14 +71,17 @@
     $('#menu_u').fadeToggle(399);
 //    $('body').css({fontSize: "9px"})
   })
-/*
-  $('#mode').on('click', function(){
-    $('body').css({background: 'black'})
-  })
-  $('#main_mod').on('click', function(){
-    $('body').css({background: '#f8f8ff'})
-  })
-*/
+
+$('#main_mod').on('click', function(){
+  $('body').css({background: '#f8f8ff'})
+})
+$('#dark').on('click', function(){
+  $('body').css({background: 'black'})
+})
+$('#vid_fo').hide();
+$('#vid').on('click', function(){
+  $('#vid_fo').fadeToggle(200);
+})
 </script>
 
 <script type="module" src='./main.js'></script>
