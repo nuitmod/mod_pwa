@@ -52,7 +52,7 @@ var wm_list=imob.data.filter(wm=>wm.id!=4).map(wm=>html`
    </div>`)
 
 var i_search=()=>html`
-<div>
+<div class="list_dat">
   <input placeholder="${imob.inf}" @input="${e=>imob.inf=e.target.value}"  />
   <button value="change" @click=${change_st}>change</button>
   <button id="mode" value="night mode" >night mode</button>

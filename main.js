@@ -44,12 +44,12 @@ $('.mobile').on('click', function(){
   $('.mobile').removeClass('open')
 })
 
-$('.list').hide();
+$('.list_dat').hide();
 $('#b_main_on').on('click', e=>{
-  $('.list').show()
+  $('.list_dat').show()
 })
 $('#b_main_off').on('click', e=>{
-  $('.list').hide()
+  $('.list_dat').hide()
 })
 $('#vis_on').on('click', function(){
   $('.audio_cont').fadeIn(290);
@@ -58,11 +58,11 @@ $('#vis_off').on('click', function(){
   $('.audio_cont').fadeOut(290);
 })
 
-$('.mobile__items a').on('click', function(){
+//$('.mobile__items a').on('click', function(){
 //  var id=e.target.id
 //  var this_id= this.id
 //  console.log(id); console.log(this_id);
 //  alert(id)
-})
+//})
 
 })
