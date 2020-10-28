@@ -1,10 +1,11 @@
 {
   "name": "mod pwa",
   "short_name": "mod_pwa",
-  "start_url": ".",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fff",
   "description": "A mod_pwa app.",
+  "theme_color": "#000",
   "icons": [
       {
           "src": "assets/logo-192.png",

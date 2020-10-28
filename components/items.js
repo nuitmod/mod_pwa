@@ -7,6 +7,9 @@ var name="Ruth";
 let change_st=e=>{
   imob.inf=name;
 }
+
+var brw_inf=navigator.userAgent;
+
 /*
 var show_item=e=>{
   console.log(e.target.id);
@@ -59,6 +62,7 @@ var i_search=()=>html`
   <h4>${imob.inf}</h4>
   <br>
   ${wm_list}
+  <p>${brw_inf}</p>
 <div>`
 
 

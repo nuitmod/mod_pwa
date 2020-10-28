@@ -108,7 +108,7 @@ audio{
 }
 .audio_cont{
   width: 100%; 290px;
-  background: black;;rgba(0,0,0,0.9);
+  background: black; rgba(0,0,0,0.9);
   position: absolute;
   bottom: 0;
 }
@@ -198,7 +198,6 @@ button{
   z-index: 9;
 }
 .mobile_items2 a{
-
   color: black; #684e5b;
   text-decoration: none;
   letter-spacing: 1px;
@@ -276,8 +275,8 @@ button{
     height: 100vh;
     color: black;
     text-align: center;
-    transform: translateX(-100%);
-    transition: transform 300ms ease-out;
+    -webkit-transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 300ms ease-out;
     z-index: 99;
 }
 .mobile__items ul{
@@ -302,8 +301,49 @@ button{
   background-color: ghostwhite;
 }
 .open {
-    transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
+/* wd */
+.wd{
+  position: fixed;
+  top: 0;
+  background :rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 50px;
+  -webkit-transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 700ms ease-out;
+}
+.open_wd {
+  -webkit-transform: translateY(0);
+}
+/* animation keyframes */
+.key_f{
+  position: fixed;
+  top: 35px;
+  background :rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 10px;
+  position: relative;
+  -webkit-animation-name: ch_color;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+
+  -webkit-transition: -webkit-transform 900ms ease-in;
+}
+
+
+.key_f:active{
+  -webkit-transform: translateY(100px);
+}
+@-webkit-keyframes ch_color {
+  /* 0% {background-color: pink}
+  100% {background-color: violet} */
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
 /*big item
 .big_i{
   background: rgba(0, 0, 0, 0.4);

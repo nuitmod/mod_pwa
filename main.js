@@ -1,11 +1,6 @@
 $(function(){
-/*
-  $('#menu_u').hide();
 
-$('#u').on('click', function(){
-  $('#menu_u').fadeToggle(399);
-})
-*/
+//  $('.inf').text('main js on');
 /*menu_1
   $('.mobile-tab').hide();
   $('.bar').on('click', function(){
@@ -13,14 +8,6 @@ $('#u').on('click', function(){
   })
 */
 
-//menu_2
-  $('.mobile2').hide();
-  $('.mobile2').on('click', function(){
-    $('.mobile2').fadeToggle(200);
-  });
-  $('.bar_1').on('click', function(){
-    $('.mobile2').fadeToggle(200);
-  })
 //btm_menu
 /*
 $('.audio_cont').hide();
@@ -28,8 +15,18 @@ $('.audio_cont').hide();
     $('.audio_cont').fadeToggle(200)
   })
 */
+$('#menu_u').hide();
+$('#u').on('click', function(){
+  $('#menu_u').fadeToggle(399);
+//    $('body').css({fontSize: "9px"})
+})
 
-
+$('#main_mod').on('click', function(){
+  $('body').css({background: '#f8f8ff'})
+})
+  $('#dark').on('click', function(){
+  $('body').css({background: 'black'})
+})
 
 $('#hdr').on('click', function(){
   $('.mobile').addClass('open')
@@ -38,25 +35,19 @@ $('.mobile').on('click', function(){
   $('.mobile').removeClass('open')
 })
 
-$('.list_dat').hide();
-$('#b_main_on').on('click', e=>{
-  $('.list_dat').show()
-})
-$('#b_main_off').on('click', e=>{
-  $('.list_dat').hide()
-})
-$('#vis_on').on('click', function(){
-  $('.audio_cont').fadeIn(290);
-})
-$('#vis_off').on('click', function(){
-  $('.audio_cont').fadeOut(290);
+$('#vid_fo').hide();
+$('#vid').on('click', function(){
+  $('#vid_fo').fadeToggle(200);
 })
 
-//$('.mobile__items a').on('click', function(){
-//  var id=e.target.id
-//  var this_id= this.id
-//  console.log(id); console.log(this_id);
-//  alert(id)
-//})
+$('.audio_cont').on('click', function(){
+  $('.wd').addClass('open_wd');
+//  $('.wd').removeClass('open_wd');
+})
+$('.wd').on('click', function(){
+  $('.wd').removeClass('open_wd');
+//  $('.wd').addClass('open_wd');
+})
+
 
 })

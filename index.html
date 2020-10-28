@@ -24,10 +24,17 @@
     <a id="vid" >vid</a>
 </div>
 <div id="app"></div>
-<div id="i_menu"></div>
+<div id="i_menu">
+  <nav class="mobile">
+    <ul class="mobile__items">
+      <li><a href="https://nuitmod.github.io/vi_pwa">vi_pwa</a></li>
+      <li><a href="https://nuitmod.github.io/mod_i">mod_i</a></li>
+    </ul>
+  </nav>
+</div>
 <div id="burg_1">
-  <span class="bar_1" id=""></span>
   <span class="bar_u" id="u"></span>
+  <span class="bar_1" id="br_1"></span>
 </div>
 <div id="menu_2_t"></div>
 <div id="main_temp"></div>
@@ -41,6 +48,10 @@
 </div>
 -->
 <div id="lit"></div>
+<div class="wd"></div>
+<div class="key_f"></div>
+<div class="brw_inf"></div>
+<div class="inf"></div>
 <!-- <div id="vid_wfc">
 <iframe id="pjsfrrsplayer" scrolling="no" allowfullscreen="true" allowtransparency="true" allow-scripts="true" style="position: absolute; width: 200px; height: 200px; border: 0px; pointer-events: none;">
   <video src="blob:https://wfc.tv/ac4b876b-fb48-4fef-9133-9f4ca0d37364" x-webkit-airplay="allow" preload="none" style="width: 200px; height: 200px; object-fit: contain; transition: filter 0.2s linear 0s; min-height: auto; max-height: none; min-width: auto; max-width: none;"></video>
@@ -66,26 +77,19 @@
 
 <div id="root"></div>
 <script>
-  $('#menu_u').hide();
-  $('#u').on('click', function(){
-    $('#menu_u').fadeToggle(399);
-//    $('body').css({fontSize: "9px"})
-  })
 
-$('#main_mod').on('click', function(){
-  $('body').css({background: '#f8f8ff'})
-})
-$('#dark').on('click', function(){
-  $('body').css({background: 'black'})
-})
-$('#vid_fo').hide();
-$('#vid').on('click', function(){
-  $('#vid_fo').fadeToggle(200);
-})
+var br_inf=navigator.userAgent;
+//console.log(br_inf)
+$('.brw_inf').text(br_inf)
+
+// $('.bar_1').on('click', function(){
+//   console.log('bar1');
+//   $('.mobile2').fadeToggle(200);
+// })
 </script>
-
-<script type="module" src='./main.js'></script>
-<script type="module" src='./app.js'></script>
+<script src='./index.js'></script>
+<script src='./main.js'></script>
+<script src='./app.js'></script>
 <script type="module" src='./components/menu.js'></script>
 <script type="module" src='./components/items.js'></script>
 <script type="module" src='./components/radio.js'></script>

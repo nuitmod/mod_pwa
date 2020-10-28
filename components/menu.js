@@ -1,6 +1,6 @@
-import {html, render} from 'https://unpkg.com/lit-html?module';
-import imob from "./mobx_store.js";
-import { autorun } from '../modules/mobx.module.js';
+import {html, render} from 'https://unpkg.com/lit-html?module'
+import imob from "./mobx_store.js"
+import { autorun } from '../modules/mobx.module.js'
 
 /*
 var menu_1=()=>html`
@@ -28,7 +28,7 @@ var menu_1=()=>html`
 </nav>
 </div>
 `;
-*/
+
 var item_menu=()=>html`
 <nav class="mobile">
         <ul class="mobile__items">
@@ -38,7 +38,7 @@ var item_menu=()=>html`
         </ul>
       </nav>
 `;
-
+*/
 var menu_2=()=>html`
 <div>
   <div class="mob2">
@@ -65,10 +65,10 @@ var menu_2=()=>html`
   </div>
 </div>`;
 
-var btm_menu=()=>html`
-  <div id='b_menu'>
-  </div>`
+// var btm_menu=()=>html`
+//   <div id='b_menu'>
+//   </div>`
 
 //export default menu_2;
-render(menu_2(), document.getElementById("menu_2_t"))
-autorun(()=>render(item_menu(), document.getElementById("i_menu")))
+render(menu_2(), document.getElementById("menu_2_t"));
+//autorun(()=>render(item_menu(), document.getElementById("i_menu")))
