@@ -22,7 +22,7 @@ var menu_1=()=>html`
     <li><a href="rend">rend</a></li>
     <li><a href="https://nuitmod.github.io/pre_iproj">pre_iproj</a></li>
     <li><a href="https://nuitmod.github.io/uwsgi_kali/i_uwsgi">i_uwsgi</a></li>
-    <li><a href="https://nuitmod.github.io/nata_pwa_">nata</a></li>
+  
     <li><a href="https://yoox.com">yoox.com</a></li>
   </ul>
 </nav>
@@ -44,10 +44,6 @@ var menu_2=()=>html`
   <div class="mob2">
     <nav class="mobile2">
       <ul class="mobile_items2">
-          <li><a href="https://nuitmod.github.io/pre_iproj">pre_iproj</a></li>
-          <li><a href="https://nuitmod.github.io/uwsgi_kali/i_uwsgi">i_uwsgi</a></li>
-          <li><a href="https://nuitmod.github.io/nata_pwa_">nata</a></li>
-          <li><a href="https://nuitmod.github.io/vi_pwa">vi_pwa</a></li>
           <li><a href="https://nuitmod.github.io/io_proj">io_proj</a></li>
           <li><a href="https://nuitmod.github.io/mod_i">mod_i</a></li>
           <li><a href="https://nuitmod.github.io/mod_pwa">in browser</a></li>
