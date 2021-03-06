@@ -48,7 +48,7 @@
   width: auto;
 }
 amp-youtube{
-  margin: 2px;
+  margin: 1px 2px;
 }
 audio{
     height: 10px;
@@ -58,10 +58,10 @@ audio{
     background-color: black;
     z-index: 12;
   }
-  #my_audio{
-    position: absolute;
-    bottom: 0;
-  }
+#my_audio{
+  position: absolute;
+  bottom: 0;
+}
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://nuitmod.github.io/mod_pwa/index.html">
@@ -151,10 +151,12 @@ audio{
   layout="fixed-height"
   src="amp-state:my_vid">
   <template type="amp-mustache">
+    <div>
     <amp-youtube
       data-videoid={{vid_id}}
-      width="190" height="90">
+      width="180" height="80">
     </amp-youtube>
+    </div>
 </template>
 </amp-list>
 </div>
