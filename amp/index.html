@@ -48,7 +48,7 @@
   width: auto;
 }
 amp-youtube{
-  margin: 1px 2px;
+  margin: 5px;
 }
 audio{
     height: 10px;
@@ -62,40 +62,51 @@ audio{
   position: absolute;
   bottom: 0;
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+}
+.wrapper div{
+  background: #1a1a1a;
+  height: 100px;
+  width: auto;
+}
 </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://nuitmod.github.io/mod_pwa/index.html">
     <title>mod_amp</title>
     <link rel="manifest" href="./manifest.json">
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Webpage",
-      "url": "https://www.example.com",
-      "name": "mod_pwa amp",
-      "headline": "webpage title",
-      "description": "Here is the description",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.example.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "The Publisher",
-        "logo": {
-          "url": "https://www.example.com/logo-blue.svg",
-          "width": 175,
-          "height": 60,
-          "@type": "ImageObject"
+      {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://www.example.com",
+        "name": "mod_pwa amp",
+        "headline": "webpage title",
+        "description": "Here is the description",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.example.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Publisher",
+          "logo": {
+            "url": "https://www.example.com/logo-blue.svg",
+            "width": 175,
+            "height": 60,
+            "@type": "ImageObject"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/leader.png",
+          "width": 1200,
+          "height": 630
         }
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://www.example.com/leader.png",
-        "width": 1200,
-        "height": 630
       }
-    }
     </script>
   </head>
 <body>
@@ -137,6 +148,22 @@ audio{
       {
         "id": 4,
         "vid_id": "TPGO6T1h528"
+      },
+      {
+        "id": 5,
+        "vid_id": "boa00bmQ7I4"
+      },
+      {
+        "id": 6,
+        "vid_id": "1hBYCzoIV4w"
+      },
+      {
+        "id": 7,
+        "vid_id": "2EvDXbA0g9s"
+      },
+      {
+        "id": 8,
+        "vid_id": "aszi-foqzwY"
       }
       ]
     }
@@ -146,21 +173,21 @@ audio{
   <section>
     <h5 class="amp_a">Video</h5>
     <div>
-<amp-list width="auto"
-  height="25"
-  layout="fixed-height"
-  src="amp-state:my_vid">
-  <template type="amp-mustache">
-    <div>
-    <amp-youtube
-      data-videoid={{vid_id}}
-      width="180" height="80">
-    </amp-youtube>
+      <amp-list width="auto"
+        height="25"
+        layout="fixed-height"
+        src="amp-state:my_vid">
+        <template type="amp-mustache">
+          <div>
+            <amp-youtube
+              data-videoid={{vid_id}}
+              width="170" height="100">
+            </amp-youtube>
+          </div>
+        </template>
+      </amp-list>
     </div>
-</template>
-</amp-list>
-</div>
-</section>
+  </section>
 </amp-accordion>
 <!--
 <amp-list width="auto"
@@ -181,19 +208,31 @@ audio{
          </section>
        </amp-accordion>
     </div>
-</template>
+  </template>
 </amp-list> -->
 <amp-accordion id="my_audio" disable-session-states>
 <section>
   <h5 class="amp_a">Radio</h5>
-  <div>
-  <h6>dubstep beyond</h6>
-  <amp-audio preload="none" controls>
-   <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
-  </amp-audio>
-</div>
+    <div>
+      <h6>dubstep beyond</h6>
+      <amp-audio preload="none" controls>
+        <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+      </amp-audio>
+    </div>
 </section>
 </amp-accordion>
+
+<!-- <div class="wrapper">
+  <div id="i1"></div>
+  <div id="i2"></div>
+  <div id="i3"></div>
+  <div id="i4"></div>
+  <div id="i5"></div>
+  <div id="i6"></div>
+  <div id="i7"></div>
+  <div id="i8"></div>
+</div> -->
+
 <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
                            layout="nodisplay">
