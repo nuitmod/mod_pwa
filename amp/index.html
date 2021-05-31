@@ -48,8 +48,11 @@
   background: var(--bg-menu);
   width: auto;
 }
+.vid{
+  width: 60%;
+}
 amp-youtube{
-  margin: 5px;
+  margin: 5px 9px;
 }
 audio{
     height: 10px;
@@ -60,13 +63,13 @@ audio{
     z-index: 12;
   }
 #my_audio{
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 50px;
   grid-row-gap: 15px;
 }
 .wrapper div{
@@ -172,21 +175,29 @@ audio{
 </amp-state>
 <amp-accordion class="menu" disable-session-states>
   <section>
-    <h5 class="amp_a">Video</h5>
+    <h5 class="amp_a">_</h5>
     <div>
-      <amp-list width="auto"
-        height="25"
-        layout="fixed-height"
-        src="amp-state:my_vid">
-        <template type="amp-mustache">
-          <div>
-            <amp-youtube
-              data-videoid={{vid_id}}
-              width="170" height="100">
-            </amp-youtube>
-          </div>
-        </template>
-      </amp-list>
+    <br>
+    <amp-accordion class="menu vid" disable-session-states>
+      <section>
+        <h5 class="amp_a">Video</h5>
+        <div>
+        <amp-list width="auto"
+          height="25"
+          layout="fixed-height"
+          src="amp-state:my_vid">
+          <template type="amp-mustache">
+            <div>
+              <amp-youtube
+                data-videoid={{vid_id}}
+                width="170" height="100">
+              </amp-youtube>
+            </div>
+          </template>
+        </amp-list>
+        </div>
+      </section>
+    </amp-accordion>
     </div>
   </section>
 </amp-accordion>
@@ -218,6 +229,10 @@ audio{
       <h6>dubstep beyond</h6>
       <amp-audio preload="none" controls>
         <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+      </amp-audio>
+      <h6>Пикник - Вампирские песни 1995</h6>
+      <amp-audio preload="none" controls>
+        <source src="../audio/Пикник - Вампирские песни 1995.mp3" type="audio/mpeg">
       </amp-audio>
     </div>
 </section>
