@@ -1,6 +1,6 @@
 {
   "name": "mod_pwa amp",
-  "short_name": "mod_pwa",
+  "short_name": "mod_amp",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000",
