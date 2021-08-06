@@ -33,7 +33,7 @@
   body{
     -webkit-text-size-adjust: 100%;
     background: var(--bg-menu);
-    font-size: 10px;
+    font-size: 11px;
   }
   amp-accordion {
     background: var(--bg-menu);
@@ -43,36 +43,33 @@
     color: var(--bg-main);
     font-size: 12px;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 5px 10px;
   }
   amp-accordion .amp_a{
   background: var(--bg-menu);
   width: auto;
 }
-.vid{
-  width: 50%;
+.inner{
+  width: 25%;
+  margin-bottom: 5px;
 }
 amp-youtube{
   margin: 5px 9px;
 }
 audio{
     height: 10px;
-    with: 209px;
+    width: 250px;
     color: black;
     background: black;
     background-color: black;
     z-index: 12;
   }
-#my_audio{
-  position: absolute;
-  bottom: 0;
-}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 100px;
   grid-row-gap: 55px;
-  pposition: absolute;
+  position: absolute;
   bottom: 0;
 }
 .wrapper div{
@@ -119,16 +116,16 @@ audio{
     </script>
   </head>
 <body>
-<amp-accordion class="menu" disable-session-states>
+<amp-accordion class="main" disable-session-states>
   <section>
-    <h5 class="amp_a">mod_amp ver</h5>
-    <div>
-      <a href="https://nuitmod.github.io/ini_pwa/amp/">ini_pwa</a>
-      <a href="https://nuitmod.github.io/npx_io/">npx_io</a>
-      <a href="https://nuitmod.github.io/io_proj/amp/">io_proj</a>
-      <a href="https://nuitmod.github.io/mod_i/amp/">mod_i</a>
-      <a href="https://nuitmod.github.io/mod_pwa/">mod_pwa main</a>
-    </div>
+    <h6 class="amp_a">mod_amp ver</h6>
+      <div>
+        <a href="https://nuitmod.github.io/ini_pwa/amp/">ini_pwa</a>
+        <a href="https://nuitmod.github.io/npx_io/">npx_io</a>
+        <a href="https://nuitmod.github.io/io_proj/amp/">io_proj</a>
+        <a href="https://nuitmod.github.io/mod_i/amp/">mod_i</a>
+        <a href="https://nuitmod.github.io/mod_pwa/">mod_pwa main</a>
+      </div>
   </section>
 </amp-accordion>
 <h4>mod_pwa amp</h4>
@@ -154,7 +151,7 @@ audio{
       },
       {
         "id": 3,
-        "vid_id": "JNaYn5mdph8"
+        "vid_id": "T4WwGJaoeXI"
       },
       {
         "id": 4,
@@ -184,15 +181,37 @@ audio{
     }
   </script>
 </amp-state>
-<amp-accordion class="menu" disable-session-states>
+<amp-accordion class="main" disable-session-states>
   <section>
-    <h5 class="amp_a">_</h5>
+    <h6 class="amp_a">_</h6>
     <div id="wr1">
       <br>
-      <!-- <amp-img height="69" width="69" src="../img/md_6.JPG" style="opacity:0.8"></amp-img> -->
-      <amp-accordion class="menu vid" disable-session-states>
+      <amp-accordion class="inner" disable-session-states>
         <section>
-          <h5 class="amp_a">Video</h5>
+          <h6 class="amp_a">Radio</h6>
+          <div>
+            <p>dubstep beyond</p>
+            <amp-audio preload="none" controls>
+              <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+            </amp-audio>
+            <p>n5md</p>
+            <amp-audio preload="none" controls>
+             <source src="https://ice6.somafm.com/n5md-128-mp3" type="audio/mpeg">
+            </amp-audio>
+            <p>Пикник</p>
+            <amp-audio preload="none" controls>
+             <source src="https://pub0201.101.ru/stream/pro/aac/64/157?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpcCI6IjMxLjE2Mi40LjIyNCIsInVzZXJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC84Ny4wLjQyODAuODggU2FmYXJpXC81MzcuMzYiLCJ1aWRfY2hhbm5lbCI6IjE1NyIsInR5cGVfY2hhbm5lbCI6ImNoYW5uZWwiLCJleHAiOjE2MDczNDkwMDh9.rWMD4tWmvVsNiZDACGBPwQRIYaKiryQPmLG8bNxGLJ0" type="audio/mpeg">
+            </amp-audio>
+            <p>Пикник - Вампирские песни 1995</p>
+            <amp-audio preload="none" controls>
+              <source src="../audio/Пикник - Вампирские песни 1995.mp3" type="audio/mpeg">
+            </amp-audio>
+          </div>
+        </section>
+      </amp-accordion>     
+      <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">Video</h6>
           <div>
           <amp-list width="auto"
             height="25"
@@ -243,9 +262,9 @@ audio{
     </div>
   </template>
 </amp-list> -->
-<amp-accordion id="my_audio" disable-session-states>
+<!-- <amp-accordion id="my_audio" disable-session-states>
   <section>
-    <h5 class="amp_a">Radio</h5>
+    <h6 class="amp_a">Radio</h6>
     <div>
       <h6>dubstep beyond</h6>
       <amp-audio preload="none" controls>
@@ -257,7 +276,7 @@ audio{
       </amp-audio>
     </div>
   </section>
-</amp-accordion>
+</amp-accordion> -->
 
 <!-- <div class="wrapper">
   <div id="i1"></div>
