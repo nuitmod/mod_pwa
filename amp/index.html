@@ -20,6 +20,7 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
     /* Add your styles here */
   :root{
@@ -37,6 +38,7 @@
   }
   amp-accordion {
     background: var(--bg-menu);
+    margin-bottom: 3px;
   }
   amp-accordion a{
     background: var(--bg-menu);
@@ -47,6 +49,7 @@
   }
   amp-accordion .amp_a{
   background: var(--bg-menu);
+  height: auto;
   width: auto;
 }
 .inner{
@@ -130,7 +133,7 @@ audio{
 </amp-accordion>
 <h4>mod_pwa amp</h4>
 <!--<amp-img height="59" width="99" src="../img/img_mod.png" style="opacity:0.8"></amp-img>-->
-<amp-img height="59" width="52" src="../img/IMG_1230.JPG" style="opacity:0.8"></amp-img>
+<amp-img height="59" width="52" src="../img/IMG_1230.JPG" style="opacity:0.4"></amp-img>
 <amp-img height="59" width="119" src="../img/IMG_1258.JPG" style="opacity:0.8"></amp-img>
 <br>
 <amp-state id="my_vid">
@@ -181,6 +184,56 @@ audio{
     }
   </script>
 </amp-state>
+<amp-state id="my_vid_2">
+  <script type="application/json">
+    {
+      "items":[
+      {
+        "vid_id": "icjF-HcXfNk"
+      },
+      {
+        "vid_id": "R06C_YUw1Kw"
+      },
+      {
+        "vid_id": "wa_s0tWHvIY"
+      },
+      {
+        "vid_id": "FcDIICRSh4U"
+      },
+      {
+        "vid_id": "bmYop9lOThg"
+      },
+      {
+        "vid_id": "1wzTkITier4"
+      },
+      {
+        "vid_id": "Gry7hSwVG_U"
+      },
+      {
+        "vid_id": "lVal1J2JWWY"
+      },
+      {
+        "vid_id": "cTcZCPW3HWQ"
+      },
+      {
+        "vid_id": "BJVjg37Sq-Q"
+      },
+      {
+        "vid_id": "UWFBnUOBr_Q"
+      },
+      {
+        "vid_id": "xNBvjtPiv5E"
+      },
+      {
+        "vid_id": "vea-F9yQMoM"
+      },
+      {
+        "vid_id": "XF0shQ0VzDM"
+      }
+      ]
+    }
+  </script>
+</amp-state>
 <amp-accordion class="main" disable-session-states>
   <section>
     <h6 class="amp_a">_</h6>
@@ -213,19 +266,9 @@ audio{
         <section>
           <h6 class="amp_a">Video</h6>
           <div>
-          <amp-list width="auto"
-            height="25"
-            layout="fixed-height"
-            src="amp-state:my_vid">
-            <template type="amp-mustache">
-              <div>
-                <amp-youtube
-                  data-videoid={{vid_id}}
-                  width="150" height="100">
-                </amp-youtube>
-              </div>
-            </template>
-          </amp-list>
+            <amp-iframe width="360" height="199" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn"  sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <amp-img placeholder height="59" width="119" src="../img/IMG_1258.JPG" style="opacity:0.8"></amp-img>
+            </amp-iframe>
           </div>
         </section>
       </amp-accordion>
@@ -237,6 +280,50 @@ audio{
             </div>
         </section>
       </amp-accordion> -->
+    </div>
+  </section>
+</amp-accordion>
+<amp-accordion class="main" disable-session-states>
+  <section>
+    <h6 class="amp_a">_</h6>
+    <div>
+      <br>
+      <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">Video</h6>
+          <div>
+          <amp-list width="auto"
+            height="25"
+            layout="fixed-height"
+            src="amp-state:my_vid">
+            <template type="amp-mustache">
+                <amp-youtube
+                  data-videoid={{vid_id}}
+                  width="150" height="100">
+                </amp-youtube>
+            </template>
+          </amp-list>
+          </div>
+        </section>
+      </amp-accordion>
+      <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">Video</h6>
+          <div>
+          <amp-list width="auto"
+            height="25"
+            layout="fixed-height"
+            src="amp-state:my_vid_2">
+            <template type="amp-mustache">
+                <amp-youtube
+                  data-videoid={{vid_id}}
+                  width="150" height="100">
+                </amp-youtube>
+            </template>
+          </amp-list>
+          </div>
+        </section>
+      </amp-accordion>
     </div>
   </section>
 </amp-accordion>
@@ -288,6 +375,9 @@ audio{
   <div id="i7"></div>
   <div id="i8"></div>
 </div> -->
+<!-- <amp-iframe width="360" height="199" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn"  sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  <amp-img placeholder height="59" width="119" src="../img/IMG_1258.JPG" style="opacity:0.8"></amp-img>
+</amp-iframe> -->
 
 <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
