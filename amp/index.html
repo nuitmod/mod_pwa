@@ -119,7 +119,7 @@ audio{
     </script>
   </head>
 <body>
-<amp-accordion class="main" disable-session-states>
+<!-- <amp-accordion class="main" disable-session-states>
   <section>
     <h6 class="amp_a">mod_amp ver</h6>
       <div>
@@ -132,8 +132,8 @@ audio{
   </section>
 </amp-accordion>
 <h4>mod_pwa amp</h4>
-<!--<amp-img height="59" width="99" src="../img/img_mod.png" style="opacity:0.8"></amp-img>-->
-<amp-img height="59" width="52" src="../img/IMG_1230.JPG" style="opacity:0.4"></amp-img>
+<amp-img height="59" width="99" src="../img/img_mod.png" style="opacity:0.8"></amp-img>
+<amp-img height="59" width="52" src="../img/IMG_1230.JPG" style="opacity:0.4"></amp-img> -->
 <amp-img height="59" width="119" src="../img/IMG_1258.JPG" style="opacity:0.8"></amp-img>
 <br>
 <amp-state id="my_vid">
@@ -262,16 +262,16 @@ audio{
           </div>
         </section>
       </amp-accordion>     
-      <amp-accordion class="inner" disable-session-states>
+      <!-- <amp-accordion class="inner" disable-session-states>
         <section>
           <h6 class="amp_a">Video</h6>
           <div>
             <amp-iframe width="360" height="199" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn"  sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              <amp-img placeholder height="59" width="119" src="../img/IMG_1258.JPG" style="opacity:0.8"></amp-img>
+              <amp-img placeholder height="1" width="2" src="../img/IMG_1258.JPG" style="opacity:0.1"></amp-img>
             </amp-iframe>
           </div>
         </section>
-      </amp-accordion>
+      </amp-accordion> -->
       <!-- <amp-accordion class="menu vid" disable-session-states>
         <section>
           <h5 class="amp_a">2</h5>
@@ -292,6 +292,16 @@ audio{
         <section>
           <h6 class="amp_a">Video</h6>
           <div>
+            <amp-iframe width="360" height="199" src="https://www.youtube.com/embed/videoseries?list=PLliyT6QVi0cW3QHwFd4KgsMsDg3U9FoYn"  sandbox="allow-scripts allow-same-origin allow-presentation" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <amp-img placeholder height="1" width="2" src="../img/IMG_1258.JPG" style="opacity:0.1"></amp-img>
+            </amp-iframe>
+          </div>
+        </section>
+      </amp-accordion>
+      <!-- <amp-accordion class="inner" disable-session-states>
+        <section>
+          <h6 class="amp_a">Video</h6>
+          <div>
           <amp-list width="auto"
             height="25"
             layout="fixed-height"
@@ -305,7 +315,7 @@ audio{
           </amp-list>
           </div>
         </section>
-      </amp-accordion>
+      </amp-accordion> -->
       <amp-accordion class="inner" disable-session-states>
         <section>
           <h6 class="amp_a">Video</h6>
@@ -328,42 +338,6 @@ audio{
   </section>
 </amp-accordion>
 <br>
-<!--
-<amp-list width="auto"
-  height="900"
-  layout="fixed-height"
-  src="amp-state:my_vid">
-  <template type="amp-mustache">
-    <div>
-      <amp-accordion class="menu" disable-session-states>
-        <section>
-          <h5 class="amp_a">Video</h5>
-          <div>
-            <amp-youtube
-              data-videoid={{vid_id}}
-              width="200" height="100">
-            </amp-youtube>
-          </div>
-         </section>
-       </amp-accordion>
-    </div>
-  </template>
-</amp-list> -->
-<!-- <amp-accordion id="my_audio" disable-session-states>
-  <section>
-    <h6 class="amp_a">Radio</h6>
-    <div>
-      <h6>dubstep beyond</h6>
-      <amp-audio preload="none" controls>
-        <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
-      </amp-audio>
-      <h6>Пикник - Вампирские песни 1995</h6>
-      <amp-audio preload="none" controls>
-        <source src="../audio/Пикник - Вампирские песни 1995.mp3" type="audio/mpeg">
-      </amp-audio>
-    </div>
-  </section>
-</amp-accordion> -->
 
 <!-- <div class="wrapper">
   <div id="i1"></div>
